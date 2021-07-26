@@ -3,27 +3,29 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Boot Camp Web Design Assignment</title>
+    <title>Source Data</title>
   
     <!-- Bootstrap. -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <!-- This line is money! It points your HTML to the CSS file. -->
+    <!-- CSS file. -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
   </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-success">
-    <a class="navbar-brand" href="index.html">Latitude</a>
+
+  <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand" id="home-button" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
 
         <li class="nav-item active dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="visualizations/temperature.html">Max Temperature</a>
             <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
@@ -37,9 +39,17 @@
         </li>
       </ul>
     </div>
-
-
   </nav>
+
+
+      <h1>Data</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <hr class="my-3">
+          <h3>The following table includes all of the data used for plotting during this project</h3>
+        </div>
+
+      </div> 
 
 
 <table border="1" class="dataframe table table-striped table-hover">

@@ -8,14 +8,15 @@
     <!-- Bootstrap. -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <!-- This line is money! It points your HTML to the CSS file. -->
+    <!-- CSS file. -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
   </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-success">
-    <a class="navbar-brand" href="index.html">Latitude</a>
+
+  <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand" id="home-button" href="index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,38 +44,23 @@
   </nav>
 
 
-
-    <div class="container">
       <h1>Comparison: Latitude vs X</h1>
       <div class="row">
         <div class="col-md-12">
-          <hr class="my-4">
+          <hr class="my-3">
           <h3>Click any plot to get an in-depth analysis</h3>
-          <br>
         </div>
 
       </div> 
 
-
-
-      <!--Normally these medium columns go full wide on small screen sizes-->
       <div class="row">
-        <div class="col-md-6">
-          <h2>vs. Max Temparature</h2>
+        <div class="col-md-3">
+          <h4>vs. Max Temparature</h4>
+          <a href="visualizations/temperature.html"> <img id="single-image" src="assets/images/Fig1.png" alt="Temperature"></a>
         </div>
-        <div class="col-md-6">
-          <h2>vs. Humidity</h2>
-        </div>
-      </div>  
-
-      <div class="row">
-        <div class="col-md-6">
-          <br>
-          <a href="visualizations/temperature.html"> <img id="main-image" src="assets/images/Fig1.png" alt="Temperature"></a>
-        </div>
-        <div class="col-md-6">
-          <br>
-          <a href="visualizations/humidity.html"> <img id="main-image" src="assets/images/Fig2.png" alt="Humidity"></a>
+        <div class="col-md-3">
+          <h4>vs. Humidity</h4>
+          <a href="visualizations/humidity.html"> <img id="single-image" src="assets/images/Fig2.png" alt="Humidity"></a>
         </div>
       </div>
 
@@ -82,22 +68,13 @@
       <br>
 
       <div class="row">
-        <div class="col-md-6">
-          <h2>vs. Cloudiness</h2>
+        <div class="col-md-3">
+          <h4>vs. Cloudiness</h4>          
+          <a href="visualizations/cloudiness.html"> <img id="single-image" src="assets/images/Fig3.png" alt="Cloudiness"></a>
         </div>
-        <div class="col-md-6">
-          <h2>vs. Wind Speed</h2>
-        </div>
-      </div>  
-
-      <div class="row">
-        <div class="col-md-6">
-          <br>
-          <a href="visualizations/cloudiness.html"> <img id="main-image" src="assets/images/Fig3.png" alt="Cloudiness"></a>
-        </div>
-        <div class="col-md-6">
-          <br>
-          <a href="visualizations/wind.html"> <img id="main-image" src="assets/images/Fig4.png" alt="Wind"></a>
+        <div class="col-md-3">
+          <h4>vs. Wind Speed</h4>
+          <a href="visualizations/wind.html"> <img id="single-image" src="assets/images/Fig4.png" alt="Wind"></a>
         </div>
       </div>
 
