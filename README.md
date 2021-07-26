@@ -15,7 +15,7 @@ Web Design Assignment - Milinda 'ML' Liyanage
 
 #### HTML pages
 * index
-* Visualisations (x4) under visualizations folder
+* visualisations (4 files)
 * comparison
 * table
 
@@ -23,6 +23,6 @@ Web Design Assignment - Milinda 'ML' Liyanage
 * one [style](assets/css/style.css) file 
 
 #### Python
-* one [ipynb](csv_to_html.ipynb)
+* one [ipynb](csv_to_html.ipynb) file
 
 
